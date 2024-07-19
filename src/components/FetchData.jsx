@@ -24,7 +24,7 @@ const FetchData = () => {
                 <tr key={user.id}>
                     <td>{user.id}</td>
                     <td>{user.name}</td>
-                    <td>{user.emai}</td>
+                    <td>{user.email}</td>
                 </tr>
                 ))
                 }
