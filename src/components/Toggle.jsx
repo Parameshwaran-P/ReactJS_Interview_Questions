@@ -6,9 +6,11 @@ const Toggle = () => {
     return (
     <div>
       <h1>Toggle Menu</h1>
-      <div style={{backgroundColor: 'white'}}>
+      {Toggle &&
+      <div style={{backgroundColor: 'black'}}>
        <p>Hi my name is paramesh</p>
-      </div>
+      </div>}
+
     </div>
   )
 }

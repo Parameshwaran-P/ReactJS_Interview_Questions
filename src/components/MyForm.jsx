@@ -14,8 +14,8 @@ const MyForm = () => {
     <div>
         {/* using contro component */}
         <form onSubmit={handleClick}>
-            <label><input type="text" onChange={handleChange} value={input.name} name='name'/>Name</label>
-            <label><input type="text" onChange={handleChange} value={input.email} name='email'/>Email</label>
+            <label>Name<input type="text" onChange={handleChange} value={input.name} name='name'/></label>
+            <label>Email<input type="text" onChange={handleChange} value={input.email} name='email'/></label>
             <button type='submit'>Submit</button>
         </form>
     </div>
