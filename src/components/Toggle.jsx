@@ -2,14 +2,14 @@ import React, { useState } from 'react'
 
 const Toggle = () => {
 
-  const [Toggle, setToggle] = useState();
+  const [Toggle, setToggle] = useState(true);
     return (
     <div>
-      <h1>Toggle Menu</h1>
-      {Toggle &&
-      <div style={{backgroundColor: 'black'}}>
-       <p>Hi my name is paramesh</p>
-      </div>}
+      
+      
+        <button onClick={()=>setToggle(!Toggle)}>Hide Element Below</button>
+        {Toggle && <h1>Toggle Menu</h1>}
+  
 
     </div>
   )
