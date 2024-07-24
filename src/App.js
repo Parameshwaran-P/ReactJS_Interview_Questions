@@ -3,6 +3,7 @@ import CounterApp from './components/CounterApp'
 import MyForm from './components/MyForm'
 import FetchData from './components/FetchData'
 import Toggle from './components/Toggle'
+import Listnames from './components/List_names'
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <MyForm/>
       <FetchData/>
       <Toggle/>
+      <Listnames/>
     </div>
   )
 }

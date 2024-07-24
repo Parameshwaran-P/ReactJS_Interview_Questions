@@ -18,6 +18,16 @@ const MyForm = () => {
             <label>Email<input type="text" onChange={handleChange} value={input.email} name='email'/></label>
             <button type='submit'>Submit</button>
         </form>
+
+        
+          <ul>
+            {input.map((user, index)=>(
+            <li key={index}>{user.name}</li>
+           
+            ))}
+            
+          </ul>
+        
     </div>
   )
 }
