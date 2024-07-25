@@ -1,9 +1,12 @@
 import React, { useState } from 'react'
 
 const MyForm = () => {
-  const [input, setInput] = useState({})
+  const [input, setInput] = useState({name:"", email:""})
+  const [data, setData] = useState([])
     const handleClick = (e) => {
-        e.preventDefault()
+        e.preventDefault();
+        setData((prev)=>[...prev, input]);
+        setInput({name:"", email:""})
         console.log(input);
     }
     const handleChange = (e) =>{
@@ -21,9 +24,10 @@ const MyForm = () => {
 
         
           <ul>
-            {input.map((user, index)=>(
-            <li key={index}>{user.name}</li>
-           
+            {data.map((user, index)=>(
+            <li key={index}>
+              {user.name} - {user.email}
+             </li>
             ))}
             
           </ul>

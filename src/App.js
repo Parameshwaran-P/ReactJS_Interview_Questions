@@ -4,6 +4,7 @@ import MyForm from './components/MyForm'
 import FetchData from './components/FetchData'
 import Toggle from './components/Toggle'
 import Listnames from './components/List_names'
+import AddSum from './components/AddSum'
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <FetchData/>
       <Toggle/>
       <Listnames/>
+      <AddSum/>
     </div>
   )
 }
