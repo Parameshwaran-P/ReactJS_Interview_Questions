@@ -14,13 +14,13 @@ const Stopwatch = () => {
     },10)
     }
     const handleStop = () =>{
-      clearInterval(intervelRef.current )
+      clearInterval(intervelRef.current)
     }
 
     let timestamp = (time - now)/1000
   return (
    <>
-   <h1>Stop Watch: {timestamp}</h1>
+   <h1>Stop Watch: {timestamp.toFixed(2)}</h1>
    <div>
     <button onClick={handleStart}>Start</button>
     <button onClick={handleStop}>Stop</button>
