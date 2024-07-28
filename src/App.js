@@ -7,6 +7,7 @@ import Listnames from './components/List_names'
 import AddSum from './components/AddSum'
 import Children from './components/Children'
 import Parent from './components/Parent'
+import Stopwatch from './components/Stopwatch'
 
 const App = () => {
   return (
@@ -17,7 +18,8 @@ const App = () => {
       <Toggle/>
       <Listnames/>
       <AddSum/>
-      <Parent><Children/></Parent> 
+      <Parent><Children/></Parent>
+      <Stopwatch/> 
     </div>
   )
 }
