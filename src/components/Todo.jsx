@@ -1,16 +1,16 @@
 import React, { useState } from 'react'
 
 const Todo = () => {
-    const [input, setInput] = useState(
-        {text:'abc'}
-    )
+    const [input, setInput] = useState("")
 
     const handleChange = (e) => {
     const {name, value} = e.target;
     setInput((prev)=>{
     return {...prev, [name]:value}
+    
     })
     }
+    console.log(input);
 
     const handleClick = (e) => {
     e.preventDefault();
@@ -27,7 +27,11 @@ const Todo = () => {
         </form>    
         </div>
       <ul className='todo__list'>
-        <li></li>
+        { input.map((data, index)=>(
+            <li key={index}>{data.text}</li>
+          ))
+        
+       }
       </ul>
      </div>
     </div>
