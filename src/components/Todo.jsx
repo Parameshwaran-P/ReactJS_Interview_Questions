@@ -23,7 +23,7 @@ const Todo = () => {
         <div className='form-container'>
         <form action="">
         <input type="text" className='form-input' name='text' onChange={handleChange}/>
-        <button className='btn'onClick={handleClick} value={input}>Add</button>
+        <button className='btn'onClick={handleClick} value={input.text}>Add</button>
         </form>    
         </div>
       <ul className='todo__list'>
